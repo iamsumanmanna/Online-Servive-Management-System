@@ -1,0 +1,13 @@
+<?php
+define('TITLE','logout');
+define('PAGE','Logout');
+include('includes/header.php');
+?>
+<?php
+@session_start();
+@session_destroy();
+header("location:login.php");
+?>
+<?php
+include('includes/footer.php');
+?>
